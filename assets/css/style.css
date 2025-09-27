@@ -440,6 +440,7 @@ footer {
 
     .navbar {
         position: static;
+        gap-top: 15px;
         margin-top: 10px;
         text-align: left-right;
     }
@@ -473,6 +474,7 @@ footer {
     }
 
 }
+
 
 
 
