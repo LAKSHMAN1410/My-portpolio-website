@@ -438,18 +438,6 @@ footer {
         gap: 5px;
     }
 
-    .navbar {
-        position: static;
-        gap-top: 15px;
-        margin-top: 10px;
-        text-align: left-right;
-    }
-
-    .navbar ul {
-        flex-direction: row;
-        gap: 15px;
-    }
-
     .about-content,
     .skills-grid,
     .certification-content,
@@ -474,6 +462,7 @@ footer {
     }
 
 }
+
 
 
 
