@@ -441,7 +441,7 @@ footer {
     .navbar {
         position: static;
         margin-top: 20px;
-        text-align: center;
+        text-align: left-right;
     }
 
     .navbar ul {
@@ -473,3 +473,4 @@ footer {
     }
 
 }
+
