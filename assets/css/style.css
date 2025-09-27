@@ -434,9 +434,21 @@ footer {
     }
 
     .social-links {
-        flex-direction: column;
-        text-align: center;
-        gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 10px; /* Add some horizontal padding for smaller screens */
+    margin: 0 auto;
+    max-width: 500px; /* Set a max-width to keep the grid from getting too wide on large phones */
+}
+
+/* This media query ensures the grid switches back to a single column on very small screens,
+   so the buttons don't become too narrow or break the layout. */
+@media (max-width: 480px) {
+    .social-links {
+        grid-template-columns: 1fr;
+    }
+}
     }
 
     .about-content,
@@ -463,6 +475,7 @@ footer {
     }
 
 }
+
 
 
 
