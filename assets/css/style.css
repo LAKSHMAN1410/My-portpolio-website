@@ -119,7 +119,7 @@ h1 {
 .about-content {
     display: flex;
     gap: 30px;
-    align-items: top;
+    align-items: flex-start;
 }
 
 .profile-placeholder {
@@ -156,7 +156,9 @@ h1 {
     font-family: 'Georgia', serif; /* Replace 'Georgia' with your desired font */
 }
 .about-content p {
+    margin-top: 0px;
     line-height: 1.8;
+    
 }
 
 /* Education and Experience Items */
@@ -349,11 +351,12 @@ footer {
 @media (min-width: 768px) {
     .about-content {
         flex-direction: row;
+        align-items: flex-start;
         text-align: left;
     }
     
     .about-content p {
-        align-self: center;
+        align-self: flex-start;
     }
 
     .skills-grid {
@@ -443,10 +446,11 @@ footer {
         margin: 0 auto;
         max-width: 500px;
     }
- .navbar ul {
+    .navbar ul {
         flex-direction: row;
         gap: 15px;
     }
+
     .about-content {
         flex-direction: column;
         align-items: center;
@@ -474,5 +478,3 @@ footer {
         }
     }
 }
-
-
