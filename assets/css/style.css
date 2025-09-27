@@ -435,6 +435,7 @@ footer {
 
     .social-links {
         flex-direction: column;
+        text-align: center;
         gap: 5px;
     }
 
@@ -462,6 +463,7 @@ footer {
     }
 
 }
+
 
 
 
