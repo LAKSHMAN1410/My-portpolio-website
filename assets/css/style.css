@@ -444,17 +444,6 @@ footer {
         max-width: 500px;
     }
 
-    .navbar {
-        position: static;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-
     .about-content {
         flex-direction: column;
         align-items: center;
@@ -482,3 +471,4 @@ footer {
         }
     }
 }
+
