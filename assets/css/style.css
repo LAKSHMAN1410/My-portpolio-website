@@ -120,9 +120,6 @@ h1 {
     display: flex;
     gap: 30px;
     align-items: top;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .profile-placeholder {
@@ -352,6 +349,11 @@ footer {
 @media (min-width: 768px) {
     .about-content {
         flex-direction: row;
+        text-align: left;
+    }
+    
+    .about-content p {
+        align-self: center;
     }
 
     .skills-grid {
@@ -366,9 +368,117 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/* Toggle button for projects */
+.toggle-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #4dc4d3, #6a5acd);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.toggle-btn:hover {
+    transform: scale(1.05);
+}
+/* Navigation Bar */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
 
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
 
+.navbar ul li {
+    display: inline;
+}
 
+.navbar ul li a {
+    text-decoration: none;
+    color: #e9edef;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
 
+.navbar ul li a:hover {
+    color: #4dc4d3; /* highlight on hover */
+}
 
+/* New Mobile-First Media Queries */
+@media (max-width: 767px) {
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
 
+    h1 {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-section {
+        padding: 80px 10px 30px;
+    }
+
+    .social-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 10px;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .navbar {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-placeholder {
+        margin-bottom: 20px;
+    }
+
+    .project-date {
+        float: none;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        .social-links {
+            grid-template-columns: 1fr;
+        }
+    }
+}
